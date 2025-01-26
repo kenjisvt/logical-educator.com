@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Logical Educator</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        header h1 {
+            font-size: 36px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .main-content {
+            flex: 3;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            margin-right: 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        h2, h3 {
+            color: #333;
+        }
+
+        .card {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        /* Responsive Design for smaller screens */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .main-content, .sidebar {
+                flex: none;
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                padding: 10px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Logical Educator</h1>
+    <p>Your go-to platform for educational content and logical learning</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Courses</a>
+    <a href="#">Blog</a>
+    <a href="#">About Us</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="content">
+    <div class="main-content">
+        <h2>Featured Courses</h2>
+        <div class="card">
+            <h3>Introduction to Logic</h3>
+            <p>This course will cover the fundamentals of logical thinking and reasoning. Learn the basics of logic and how to apply them in real-life scenarios.</p>
+        </div>
+        <div class="card">
+            <h3>Advanced Problem Solving</h3>
+            <p>Learn advanced techniques for solving complex problems in mathematics and logic. This course is perfect for those looking to challenge their cognitive skills.</p>
+        </div>
+        <div class="card">
+            <h3>Critical Thinking for Educators</h3>
+            <p>This course is designed to help educators enhance their critical thinking skills and improve teaching methods for better student engagement Iin biology,chemistry,math,and physics.</p>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <h3>Meet Our Teachers</h3>
+        <!-- Khatung Tripura -->
+        <div class="card">
+            <h3>Khatung Tripura</h3>
+            <p><strong>Subjects:</strong> Biology and Chemistry</p>
+            <p>Khatung Tripura is an experienced educator specializing in Biology and Chemistry. With years of experience, Khatung brings a deep understanding of life sciences to the classroom.</p>
+        </div>
+
+        <!-- Sourav Tripura -->
+        <div class="card">
+            <h3>Sourav Tripura</h3>
+            <p><strong>Subjects:</strong> Mathematics and Physics</p>
+            <p>Sourav Tripura is passionate about Mathematics and Physics. He is dedicated to making complex subjects easy to understand, with a focus on problem-solving techniques and practical applications.</p>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <p>&copy; 2025 Logical Educator | All rights reserved</p>
+</div>
+
+</body>
+</html>
